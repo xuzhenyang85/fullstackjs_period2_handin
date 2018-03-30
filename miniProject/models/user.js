@@ -21,8 +21,8 @@ var UserSchema = new Schema({
 
 // middleware før.. pre, det vil komme til at hash kodeord
 UserSchema.pre("save", function(next){
-    this.password = "hashing" + this.password;
-    this.lastUpdated = Date.now;
+    this.password = "jdfklsajfldkasj" + this.password;
+    this.lastUpdated = new Date();
     next();
 });
 
